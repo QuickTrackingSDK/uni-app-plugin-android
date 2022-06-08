@@ -71,7 +71,7 @@
         <!--设置SDK收数服务主域名和备用域名，如果没有备用域名，对应配置值可以是空字符串-->
         <meta-data
             android:name="UMENG_URL"
-            android:value="https://log-api.aplus.emas-poc.com" />
+            android:value="https://您的收数域名" />
         <!-- 如果没有备用收数域名，UMENG_URL2配置项值可以为空串。-->
         <meta-data
             android:name="UMENG_URL2"
