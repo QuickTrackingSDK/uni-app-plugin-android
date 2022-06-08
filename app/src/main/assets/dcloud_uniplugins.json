@@ -1,0 +1,14 @@
+{
+  "nativePlugins": [
+    {
+      "hooksClass": "com.umeng.uniapp.analytics.UniAnalyticsProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "UmengAnalytics",
+          "class": "com.umeng.uniapp.analytics.UniAnalyticsModule"
+        }
+      ]
+    }
+  ]
+}

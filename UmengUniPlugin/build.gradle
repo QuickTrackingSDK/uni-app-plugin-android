@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        consumerProguardFiles 'proguard-rules.pro'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    compileOnly 'com.android.support:recyclerview-v7:29.0.0'
+    compileOnly 'com.android.support:support-v4:29.0.0'
+    compileOnly 'com.android.support:appcompat-v7:29.0.0'
+
+
+    compileOnly fileTree(dir: 'libs', include: ['uniapp-v8-release.aar'])
+    compileOnly 'com.alibaba:fastjson:1.1.46.android'
+    compileOnly 'com.umeng.umsdk:qt-common:1.2.1.P'
+    compileOnly 'com.umeng.umsdk:qt-spm:1.2.1'
+}

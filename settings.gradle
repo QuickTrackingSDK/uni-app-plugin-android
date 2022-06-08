@@ -1,0 +1,3 @@
+include ':UmengUniPlugin'
+include ':app'
+rootProject.name = "uni-app-sdk"
