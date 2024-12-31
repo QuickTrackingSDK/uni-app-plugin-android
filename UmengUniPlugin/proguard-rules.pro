@@ -19,8 +19,4 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--dontwarn com.sensorsdata.uniapp.**
 -keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
--keep class com.sensorsdata.uniapp.** {
-*;
-}
